@@ -35,18 +35,19 @@
             // 
             this.ucInfo.Location = new System.Drawing.Point(12, 12);
             this.ucInfo.Name = "ucInfo";
-            this.ucInfo.Size = new System.Drawing.Size(946, 584);
+            this.ucInfo.Size = new System.Drawing.Size(1089, 584);
             this.ucInfo.TabIndex = 0;
             // 
             // FGiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(987, 623);
+            this.ClientSize = new System.Drawing.Size(1120, 662);
             this.Controls.Add(this.ucInfo);
             this.Name = "FGiaoVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FGiaoVien";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.Load += new System.EventHandler(this.FGiaoVien_Load);
             this.ResumeLayout(false);
 
         }

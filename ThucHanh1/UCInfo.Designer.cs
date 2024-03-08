@@ -30,7 +30,7 @@
         {
             this.txtID = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
-            this.gvHsinh = new System.Windows.Forms.DataGridView();
+            this.gvList = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txtCMND = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
@@ -42,18 +42,18 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.txtGioiTinh = new System.Windows.Forms.TextBox();
+            this.txtGender = new System.Windows.Forms.TextBox();
             this.lblGioiTinh = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.txtPhone = new System.Windows.Forms.TextBox();
             this.lblPhone = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.gvHsinh)).BeginInit();
+            this.txtPhone = new System.Windows.Forms.MaskedTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.gvList)).BeginInit();
             this.SuspendLayout();
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(226, 15);
+            this.txtID.Location = new System.Drawing.Point(251, 20);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(214, 26);
             this.txtID.TabIndex = 28;
@@ -68,41 +68,41 @@
             this.lblID.TabIndex = 27;
             this.lblID.Text = "ID";
             // 
-            // gvHsinh
+            // gvList
             // 
-            this.gvHsinh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvHsinh.Location = new System.Drawing.Point(479, 41);
-            this.gvHsinh.Name = "gvHsinh";
-            this.gvHsinh.RowHeadersWidth = 62;
-            this.gvHsinh.RowTemplate.Height = 28;
-            this.gvHsinh.Size = new System.Drawing.Size(441, 317);
-            this.gvHsinh.TabIndex = 23;
-            this.gvHsinh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvHsinh_CellClick);
+            this.gvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvList.Location = new System.Drawing.Point(526, 21);
+            this.gvList.Name = "gvList";
+            this.gvList.RowHeadersWidth = 62;
+            this.gvList.RowTemplate.Height = 28;
+            this.gvList.Size = new System.Drawing.Size(544, 453);
+            this.gvList.TabIndex = 23;
+            this.gvList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvHsinh_CellClick);
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(226, 263);
+            this.dateTimePicker1.Location = new System.Drawing.Point(251, 268);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(214, 26);
             this.dateTimePicker1.TabIndex = 22;
             // 
             // txtCMND
             // 
-            this.txtCMND.Location = new System.Drawing.Point(226, 198);
+            this.txtCMND.Location = new System.Drawing.Point(251, 203);
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(214, 26);
             this.txtCMND.TabIndex = 21;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(226, 127);
+            this.txtAddress.Location = new System.Drawing.Point(251, 132);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(214, 26);
             this.txtAddress.TabIndex = 20;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(226, 69);
+            this.txtName.Location = new System.Drawing.Point(251, 74);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(214, 26);
             this.txtName.TabIndex = 19;
@@ -150,7 +150,7 @@
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnEdit.Location = new System.Drawing.Point(399, 512);
+            this.btnEdit.Location = new System.Drawing.Point(398, 522);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(92, 37);
             this.btnEdit.TabIndex = 35;
@@ -160,7 +160,7 @@
             // btnRemove
             // 
             this.btnRemove.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnRemove.Location = new System.Drawing.Point(226, 512);
+            this.btnRemove.Location = new System.Drawing.Point(225, 522);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(92, 37);
             this.btnRemove.TabIndex = 34;
@@ -170,19 +170,19 @@
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnAdd.Location = new System.Drawing.Point(54, 512);
+            this.btnAdd.Location = new System.Drawing.Point(53, 522);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(92, 37);
             this.btnAdd.TabIndex = 33;
             this.btnAdd.Text = "Them";
             this.btnAdd.UseVisualStyleBackColor = false;
             // 
-            // txtGioiTinh
+            // txtGender
             // 
-            this.txtGioiTinh.Location = new System.Drawing.Point(226, 327);
-            this.txtGioiTinh.Name = "txtGioiTinh";
-            this.txtGioiTinh.Size = new System.Drawing.Size(214, 26);
-            this.txtGioiTinh.TabIndex = 37;
+            this.txtGender.Location = new System.Drawing.Point(251, 332);
+            this.txtGender.Name = "txtGender";
+            this.txtGender.Size = new System.Drawing.Size(214, 26);
+            this.txtGender.TabIndex = 37;
             // 
             // lblGioiTinh
             // 
@@ -196,7 +196,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(226, 385);
+            this.txtEmail.Location = new System.Drawing.Point(251, 390);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(214, 26);
             this.txtEmail.TabIndex = 39;
@@ -211,22 +211,23 @@
             this.lblEmail.TabIndex = 38;
             this.lblEmail.Text = "Email";
             // 
-            // txtPhone
-            // 
-            this.txtPhone.Location = new System.Drawing.Point(226, 443);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(214, 26);
-            this.txtPhone.TabIndex = 41;
-            // 
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblPhone.Location = new System.Drawing.Point(24, 449);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(143, 25);
+            this.lblPhone.Size = new System.Drawing.Size(126, 25);
             this.lblPhone.TabIndex = 40;
-            this.lblPhone.Text = "Phone Number";
+            this.lblPhone.Text = "So dien thoai";
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Location = new System.Drawing.Point(251, 450);
+            this.txtPhone.Mask = "000-0000-000";
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(214, 26);
+            this.txtPhone.TabIndex = 42;
             // 
             // UCInfo
             // 
@@ -236,14 +237,14 @@
             this.Controls.Add(this.lblPhone);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.txtGioiTinh);
+            this.Controls.Add(this.txtGender);
             this.Controls.Add(this.lblGioiTinh);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.lblID);
-            this.Controls.Add(this.gvHsinh);
+            this.Controls.Add(this.gvList);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txtCMND);
             this.Controls.Add(this.txtAddress);
@@ -253,8 +254,8 @@
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblName);
             this.Name = "UCInfo";
-            this.Size = new System.Drawing.Size(946, 622);
-            ((System.ComponentModel.ISupportInitialize)(this.gvHsinh)).EndInit();
+            this.Size = new System.Drawing.Size(1116, 622);
+            ((System.ComponentModel.ISupportInitialize)(this.gvList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,19 +268,19 @@
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblName;
         public System.Windows.Forms.TextBox txtID;
-        public System.Windows.Forms.DataGridView gvHsinh;
+        public System.Windows.Forms.DataGridView gvList;
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
         public System.Windows.Forms.TextBox txtCMND;
         public System.Windows.Forms.TextBox txtAddress;
         public System.Windows.Forms.TextBox txtName;
-        public System.Windows.Forms.TextBox txtGioiTinh;
+        public System.Windows.Forms.TextBox txtGender;
         private System.Windows.Forms.Label lblGioiTinh;
         public System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblEmail;
-        public System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label lblPhone;
         public System.Windows.Forms.Button btnEdit;
         public System.Windows.Forms.Button btnRemove;
         public System.Windows.Forms.Button btnAdd;
+        public System.Windows.Forms.MaskedTextBox txtPhone;
     }
 }

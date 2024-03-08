@@ -8,7 +8,7 @@ namespace ThucHanh1
 {
     internal class Person
     {
-        private string iD, name, address, cmnd, phoneNumber, gioiTinh, email;
+        private string iD, name, address, cmnd, phoneNumber, gender, email;
         private DateTime bornYear;
 
         public string ID { get => iD; set => iD = value; }
@@ -16,7 +16,7 @@ namespace ThucHanh1
         public string Address { get => address; set => address = value; }
         public string Cmnd { get => cmnd; set => cmnd = value; }
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
-        public string GioiTinh { get => gioiTinh; set => gioiTinh = value; }
+        public string Gender { get => gender; set => gender = value; }
         public string Email { get => email; set => email = value; }
         public DateTime BornYear { get => bornYear; set => bornYear = value; }
 
@@ -25,7 +25,7 @@ namespace ThucHanh1
             ID = iDValue;
         }
 
-        public Person(string iDValue, string nameValue, string addressValue, string cmndValue, DateTime bornYearValue, string phone, string gt, string emailValue)
+        public Person(string iDValue, string nameValue, string addressValue, string cmndValue, DateTime bornYearValue, string phone, string genderValue, string emailValue)
         {
             ID = iDValue;
             Name = nameValue;
@@ -33,7 +33,7 @@ namespace ThucHanh1
             Cmnd = cmndValue;
             BornYear = bornYearValue;
             PhoneNumber = phone;
-            GioiTinh = gt;
+            Gender = genderValue;
             Email = emailValue;
         }
     }

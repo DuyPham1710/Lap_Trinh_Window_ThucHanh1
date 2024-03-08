@@ -34,7 +34,7 @@
             // 
             // btnGiaoVien
             // 
-            this.btnGiaoVien.Location = new System.Drawing.Point(845, 579);
+            this.btnGiaoVien.Location = new System.Drawing.Point(975, 603);
             this.btnGiaoVien.Name = "btnGiaoVien";
             this.btnGiaoVien.Size = new System.Drawing.Size(99, 47);
             this.btnGiaoVien.TabIndex = 33;
@@ -46,19 +46,20 @@
             // 
             this.ucInfo.Location = new System.Drawing.Point(12, 13);
             this.ucInfo.Name = "ucInfo";
-            this.ucInfo.Size = new System.Drawing.Size(946, 560);
+            this.ucInfo.Size = new System.Drawing.Size(1089, 584);
             this.ucInfo.TabIndex = 34;
             // 
             // FHocSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(987, 638);
+            this.ClientSize = new System.Drawing.Size(1120, 662);
             this.Controls.Add(this.ucInfo);
             this.Controls.Add(this.btnGiaoVien);
             this.Name = "FHocSinh";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FHocSinh";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.FHocSinh_Load);
             this.ResumeLayout(false);
 
         }

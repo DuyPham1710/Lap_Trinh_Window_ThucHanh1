@@ -12,6 +12,7 @@ namespace ThucHanh1
     internal class DBConnection
     {
         static SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
+
         public static DataTable Load(string selectForm)
         {
             try
@@ -20,9 +21,9 @@ namespace ThucHanh1
                 string sqlStr = string.Format("SELECT *FROM " + selectForm);
 
                 SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, conn);
-                DataTable dtSinhVien = new DataTable();
-                adapter.Fill(dtSinhVien);
-                return dtSinhVien; /// gvHsinh = name cua data gridview
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                return dt;
             }
             catch (Exception exc)
             {
@@ -34,21 +35,21 @@ namespace ThucHanh1
             }
             return null;
         }
+
         public static void Execute(string SQL)
         {
             try
             {
-                // Ket noi
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 if (cmd.ExecuteNonQuery() > 0)
                 {
-                     MessageBox.Show("Thuc thi thanh cong");
+                    MessageBox.Show("Thực thi thành công");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Thuc thi that bai\n" + ex);
+                MessageBox.Show("Thực thi thất bại\n" + ex);
             }
             finally
             {
